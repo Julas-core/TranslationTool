@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: flex;
+            justify-content: center; /* Centers horizontally */
+            align-items: center;     /* Centers vertically */
+            height: 100vh; 
+        }
+        .elements{
+            width: 50%;           /* Element must have a defined width smaller than its parent */
+            margin: 0 auto;
+        }
+        .btn{
+            display:grid;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <title>Translation Tool</title>
+</head>
+<body>
+    <div class="elements">
+        <h1>Translation Service</h1>
+
+        <textarea name="textarea" id="input" placeholder="Translating..." rows="5" cols="75"></textarea>
+
+        <input class="btn" type="button" value="Translate" onclick="translateTxt()">
+        <select id="source">
+        <option value="en">English</option>
+        <option value="fr">French</option>
+        <option value="am">Amharic</option>
+        <option value="tg">Tigrinya</option>
+        <option value="sp">Spanish</option>
+        </select>
+
+        <select id="target">
+        <option value="fr">French</option>
+        <option value="en">English</option>
+        <option value="sp">Spanish</option>
+        <option value="am">Amharic</option>
+        <option value="tg">Tigrinya</option>
+        </select>
+
+        <div id="output"></div>
+    </div>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
