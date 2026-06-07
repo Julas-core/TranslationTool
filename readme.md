@@ -6,14 +6,14 @@ A real-time translation web app built as part of my AI internship at [CodeAlpha]
 
 ---
 
-![screenshot](screenshot.png)
+![screenshot](/assets/homepage.png)
 
 ---
 
 ## Features
 
 - Translate between 14 languages in real time
-- Amharic, Tigrinya, and Oromo support (East African languages)
+- Amharic, and Tigrinya support (East African languages)
 - RTL text direction for Arabic
 - Swap source and target languages with one click
 - Copy translation to clipboard
@@ -36,7 +36,7 @@ No setup needed — just open `index.html` in a browser.
 
 ```bash
 git clone https://github.com/julas-core/translationtool
-cd translationtool
+cd TranslationTool
 open index.html
 ```
 
