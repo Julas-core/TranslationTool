@@ -327,6 +327,12 @@
             border-radius: 50%;
             background: var(--gold);
         }
+        .status-dot[data-state="done"] {
+            background: #22c55e;
+        }
+        .status-dot[data-state="error"] {
+            background: var(--coral);
+        }
 
         .accent-strip {
             height: 6px;
@@ -396,6 +402,12 @@
                 min-width: auto;
                 font-size: 0.88rem;
             }
+            .output[lang='ar'],
+                text-textarea[lang='ar'] {
+                    direction: rtl;
+                    text-align: right;
+                }
+            
         }
     </style>
 </head>
@@ -440,6 +452,16 @@
                         <option value="es">Spanish</option>
                         <option value="am">Amharic</option>
                         <option value="ti">Tigrinya</option>
+                        <option value="ar">Arabic</option>
+                        <option value="de">German</option>
+                        <option value="it">Italian</option>
+                        <option value="pt">Portuguese</option>
+                        <option value="ru">Russian</option>
+                        <option value="zh-CN">Chinese(Simplified)</option>
+                        <option value="ja">Japanese/option>
+                        <option value="ko">Korean</option>
+                        <option value="sw">Swahili</option>
+                        <option value="hi">Hindi</option>
                     </select>
                 </div>
 
@@ -472,6 +494,9 @@
             </div>
         </section>
     </main>
+    <footer>
+        <a href="http://github.com/julas-core/translationtool">Github</a>
+    </footer>
 
     <script src="script.js" defer></script>
 </body>
