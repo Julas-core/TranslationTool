@@ -334,10 +334,6 @@
             background: var(--coral);
         }
 
-        .accent-strip {
-            height: 6px;
-            background: linear-gradient(90deg, var(--teal) 0 28%, var(--gold) 28% 45%, var(--coral) 45% 72%, var(--violet) 72% 100%);
-        }
 
         @media (max-width: 820px) {
             .page {
@@ -407,6 +403,11 @@
                     direction: rtl;
                     text-align: right;
                 }
+            footer{
+                text-decoration: none;
+                color: white;
+                background-color: #18201d;
+            }
             
         }
     </style>
@@ -415,21 +416,11 @@
     <main class="page">
         <header class="masthead">
             <div>
-                <div class="brand-mark" aria-hidden="true">T</div>
                 <h1>Translation Tool</h1>
-                <p class="subtitle">A quiet place to move a thought from one language into another.</p>
-            </div>
-            <div class="language-ribbon" aria-label="Supported languages">
-                <span>Hello</span>
-                <span>Bonjour</span>
-                <span>Hola</span>
-                <span>Selam</span>
-                <span>ሰላም</span>
             </div>
         </header>
 
         <section class="tool" aria-label="Translator">
-            <div class="accent-strip" aria-hidden="true"></div>
             <div class="toolbar">
                 <div class="field">
                     <label for="source">From</label>
@@ -439,6 +430,16 @@
                         <option value="am">Amharic</option>
                         <option value="ti">Tigrinya</option>
                         <option value="es">Spanish</option>
+                        <option value="ar">Arabic</option>
+                        <option value="de">German</option>
+                        <option value="it">Italian</option>
+                        <option value="pt">Portuguese</option>
+                        <option value="ru">Russian</option>
+                        <option value="zh-CN">Chinese(Simplified)</option>
+                        <option value="ja">Japanese/option>
+                        <option value="ko">Korean</option>
+                        <option value="sw">Swahili</option>
+                        <option value="hi">Hindi</option>
                     </select>
                 </div>
 
@@ -458,7 +459,7 @@
                         <option value="pt">Portuguese</option>
                         <option value="ru">Russian</option>
                         <option value="zh-CN">Chinese(Simplified)</option>
-                        <option value="ja">Japanese/option>
+                        <option value="ja">Japanese</option>
                         <option value="ko">Korean</option>
                         <option value="sw">Swahili</option>
                         <option value="hi">Hindi</option>
